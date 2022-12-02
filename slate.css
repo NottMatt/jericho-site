@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(45, 48, 52);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+h1 {
+    color: rgb(207, 214, 225);
+    font-size: 40px;
+}
+h2 {
+    color: rgb(207, 214, 225);
+    font-size: 30px;
+}
+p {
+    width: 80%;
+    font-size: 20px;
+}
+.headDiv {
+    background-color: rgb(45, 48, 52);
+    color: rgb(155, 160, 168);
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.entryDiv {
+    margin-bottom: 1%;
+    background-color: rgb(35, 38, 42);
+    color: rgb(155, 160, 168);
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%
+}
+.leftDiv {
+    float: left;
+    background-color: rgb(35, 38, 42);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.rightDiv {
+    background-color: rgb(35, 38, 42);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.galleryDiv {
+    margin-bottom: 1%;
+    background-color: rgb(35, 38, 42);
+    color: rgb(155, 160, 168);
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%
+}
+.stubImg {
+    width: 200px;
+}
+.galleryImg {
+    width: 500px;
+}
+.tags {
+    padding-top: 50px;
+    color: rgb(75, 78, 82);
+}

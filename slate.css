@@ -54,6 +54,9 @@ p {
 .galleryImg {
     width: 500px;
 }
+.pinImg {
+    width: 88px;
+}
 .tags {
     padding-top: 50px;
     color: rgb(75, 78, 82);

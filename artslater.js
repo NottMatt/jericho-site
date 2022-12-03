@@ -1,0 +1,213 @@
+// Generates Slates to put on the Artbook Page
+
+// Slate root
+const topLevel = document.querySelector(".galleryRoot");
+
+// create new Slate
+function gallerySlate(slate, name, images, description, tags) {
+    slate.classList.add("galleryDiv");
+
+    let lhs = document.createElement("div");
+    let rhs = document.createElement("div");
+    rhs.classList.add("rightDiv");
+    lhs.classList.add("leftDiv");
+
+    for (var i = 0; i < images.length; i++) {
+        let imgdiv = document.createElement("div");
+        let image = document.createElement("img");
+        image.classList.add("galleryImg");
+        image.setAttribute("src", images[i].source);
+        image.setAttribute("alt", "image missing");
+        imgdiv.append(image);
+        lhs.append(imgdiv);
+    }
+
+    let header = document.createElement("h2");    
+
+    let desc = document.createElement("p");
+    desc.textContent = description;
+
+    let tag = document.createElement("p");
+    tag.classList.add("tags");
+    tag.textContent = tags;
+
+    slate.append(lhs);
+    slate.append(rhs);
+    rhs.append(header);
+    rhs.append(desc);
+    rhs.append(tag);
+}
+
+var galleryslates = `{
+    "pieces": [
+        {
+            "name": "Trios Dark",
+            "description": "This piece was an homage to our Apex Legends squad, and inspired by acrylic laser-cut pieces we had made previously.",
+            "tags": "Blender, 3D render, acrylic, abstract, dark mode",
+            "images": [
+                {"source": "pieces/trios_hires_dark.png"}
+            ]
+        },
+        {
+            "name": "Trios Light",
+            "description": "This piece was created as a light-mode rendition of the first Trios piece. It is a bit simpler, with less lighting effects and a more flat appear.",
+            "tags": "Blender, 3D render, acrylic, abstract, light mode",
+            "images": [
+                {"source": "pieces/trios_hires.png"}
+            ]
+        },
+        {
+            "name": "Octane and Valkyrie",
+            "description": "This piece is an upgrade on the Trios set, using the assets from the Apex Legends game files. It portrays Octane and Valkyrie in legendary skins doing some classic poses.",
+            "tags": "Blender, 3D render, rigging, in-game assets, edge-lighting",
+            "images": [
+                {"source": "pieces/duos.png"}
+            ]
+        },
+        {
+            "name": "Octane Jumppad",
+            "description": "This piece was an experiment with Blender's diffusion lighting. The subject is the jumppad from Apex Legends.",
+            "tags": "Blender, 3D render, diffusion experiment",
+            "images": [
+                {"source": "pieces/jumppad_hires.png"}
+            ]
+        },
+        {
+            "name": "AAC Prototype",
+            "description": "A college engineering project called for a rendered design prototype for the product's form factor.",
+            "tags": "Blender, 3D render, engineering/design prototype",
+            "images": [
+                {"source": "pieces/AACproto09.png"},
+                {"source": "pieces/AACproto10.png"},
+                {"source": "pieces/AACproto06.png"},
+                {"source": "pieces/AACproto07.png"}
+            ]
+        },
+        {
+            "name": "Assorted GFU Wallpapers",
+            "description": "As an exercise, I created a new GFU wallpaper for all of my devices frequently throughout college. Each time I would aim for balance, as not to be distracting, but also interesting.",
+            "tags": "Blender, 3D render, Photoshop, abstract, environment, ongoing",
+            "images": [
+                {"source": "pieces/gfucity3bk.png"},
+                {"source": "pieces/mountgfu.png"},
+                {"source": "pieces/mountgfu_square.png"}
+            ]
+        },
+        {
+            "name": "Macropad Prototype",
+            "description": "A friend commissioned a concept piece for a macropad he wanted to build. The look was inspired by mid-90's radio/television hardware.",
+            "tags": "Blender, 3D render, design concept, engineering/design prototype",
+            "images": [
+                {"source": "pieces/macropad.png"}
+            ]
+        },
+        {
+            "name": "Boared",
+            "description": "A remark by a friend about how boring his calculus class was inspired this illustration of a boar charging at a textbook.",
+            "tags": "Photoshop, humor",
+            "images": [
+                {"source": "pieces/boared2.png"}
+            ]
+        },
+        {
+            "name": "NDCAYF asset concepts",
+            "description": "A depricated college game-design project spawned these concept pieces.",
+            "tags": "Blender, 3D render, design concept, game asset design",
+            "images": [
+                {"source": "pieces/CharConcept.png"},
+                {"source": "pieces/CharConcept02.png"},
+                {"source": "pieces/GunConcept.png"},
+                {"source": "pieces/gunlayout.png"}
+            ]
+        },
+        {
+            "name": "NDCAYF worldbuilding concepts",
+            "description": "These pieces are more concept draftings from the NDCAYF project. These ones are from our story/worldbuilding process.",
+            "tags": "Blender, 3D render, Photoshop, design concept, game asset design",
+            "images": [
+                {"source": "pieces/coverart.png"},
+                {"source": "pieces/Manifest.png"},
+                {"source": "pieces/NDCAYF03.png"},
+                {"source": "pieces/model0.png"}
+            ]
+        },
+        {
+            "name": "Colossal Space Cat",
+            "description": "A friend commissioned a render of a massive space object in the form of a cat demolishing the earth.",
+            "tags": "Blender, 3D render, humor",
+            "images": [
+                {"source": "pieces/coverart.png"},
+                {"source": "pieces/Manifest.png"}
+            ]
+        },
+        {
+            "name": "Abstract Depression Portrait",
+            "description": "This piece was from a digital art course in college. This is meant to be an abstract portrait to illustrate an emotion.",
+            "tags": "Photoshop, abstract, portrait",
+            "images": [
+                {"source": "pieces/Portrait_collage.png"}
+            ]
+        },
+        {
+            "name": "Spotify Album Cover",
+            "description": "This piece was a commission for a custom spotify/music playlist or album cover. Inspired by the feeling of music bringing you to a new place.",
+            "tags": "Photoshop, abstract",
+            "images": [
+                {"source": "pieces/spotify-cover.png"}
+            ]
+        },
+        {
+            "name": "DND Character Portrait",
+            "description": "This piece was done for a DND campaign. The subject is my Kenku Bard character.",
+            "tags": "Photoshop, character portrait",
+            "images": [
+                {"source": "pieces/Untitled-3.jpg"}
+            ]
+        },
+        {
+            "name": "Thomas Shelby - Vector Portrait",
+            "description": "This piece is a vector graphic portrait of Thomas Shelby from the show Peaky Blinders.",
+            "tags": "Inkscape, vector art, character portrait",
+            "images": [
+                {"source": "pieces/vector_portrait.jpg"}
+            ]
+        },
+        {
+            "name": "Pearl Stratocaster",
+            "description": "This piece is my magnum opus of 3D Rendering. This is a super-accurate digital recreation of my very own Fender Stratocaster.",
+            "tags": "Blender, 3D render, realism",
+            "images": [
+                {"source": "pieces/guitar.png"},
+                {"source": "pieces/guitar_upright.png"}
+            ]
+        },
+        {
+            "name": "Wireframe Models",
+            "description": "These graphics are wireframe representations of assets I designed for work.",
+            "tags": "Blender, 3D render, wireframe, engineering design, asset design",
+            "images": [
+                {"source": "pieces/wireframe_BL.png"},
+                {"source": "pieces/wireframe_RW.png"}
+            ]
+        }
+    ]
+}`
+
+var slateStructure = JSON.parse(galleryslates);
+var slates = slateStructure.pieces;
+
+for (var i = 0; i < slates.length; i++) {
+    let sName = slates[i].name;
+    let sImages = slates[i].images;
+    let sDesc = slates[i].description;
+    let sTags = slates[i].tags;
+
+    var newSlate = document.createElement("div");
+    gallerySlate(newSlate,
+                    sName,
+                    sImages,
+                    sDesc,
+                    sTags);
+    
+    topLevel.appendChild(newSlate);
+}

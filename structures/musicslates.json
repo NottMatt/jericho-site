@@ -1,0 +1,24 @@
+{
+    "pieces": [
+        {
+            "name": "Today in Industry",
+            "source": "audio/wilson-mix.mp3" 
+        },
+        {
+            "name": "Haluve - Boosted",
+            "source": "audio/Haluve_Boost.mp3" 
+        },
+        {
+            "name": "The Doak is Yours",
+            "source": "audio/The_Doak_is_yours.mp3" 
+        },
+        {
+            "name": "Gimme the Bique",
+            "source": "audio/Gimme_the_Bique.mp3" 
+        },
+        {
+            "name": "Mr Blue Sky - Remastered",
+            "source": "audio/Mr-Blue-Sky-But-Better.mp3" 
+        }
+    ]
+}

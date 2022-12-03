@@ -23,6 +23,7 @@ function gallerySlate(slate, name, images, description, tags) {
     }
 
     let header = document.createElement("h2");    
+    header.textContent = name;
 
     let desc = document.createElement("p");
     desc.textContent = description;

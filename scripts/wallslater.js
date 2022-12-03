@@ -32,28 +32,32 @@ function templateSlate(slate, name, short, link, description, tags) {
 
 
 // parse out json
-var loadWallslates = fetch("../structures/wallslates.json");
-console.log(loadWallslates.json());
-var wallslates = JSON.parse(loadWallslates);
-var slates = wallslates.entries;
+fetch("../structures/wallslates.json", { 
+  method: 'GET'
+})
+    .then(function(response) { return response.json(); })
+    .then(function(json) {
+        var slates = json.entries;
+        for (var i = 0; i < slates.length; i++) {
+            let sName = slates[i].name;
+            let sShort = slates[i].short;
+            let sLink = slates[i].source;
+            let sDesc = slates[i].description;
+            let sTags = slates[i].tags;
+    
+            var newSlate = document.createElement("div");
+            templateSlate(newSlate,
+                            sName,
+                            sShort,
+                            sLink,
+                            sDesc,
+                            sTags);
+            
+            topLevel.appendChild(newSlate);
+    }
+});
 
-for (var i = 0; i < slates.length; i++) {
-        let sName = slates[i].name;
-        let sShort = slates[i].short;
-        let sLink = slates[i].source;
-        let sDesc = slates[i].description;
-        let sTags = slates[i].tags;
 
-        var newSlate = document.createElement("div");
-        templateSlate(newSlate,
-                        sName,
-                        sShort,
-                        sLink,
-                        sDesc,
-                        sTags);
-        
-        topLevel.appendChild(newSlate);
-}
 
 
 

@@ -4,15 +4,15 @@ body {
 }
 h1 {
     color: rgb(207, 214, 225);
-    font-size: 30px;
+    font-size: 40px;
 }
 h2 {
     color: rgb(207, 214, 225);
-    font-size: 20px;
+    font-size: 30px;
 }
 p {
     width: 80%;
-    font-size: 12px;
+    font-size: 16px;
 }
 .structure {
     display: none;
@@ -21,6 +21,9 @@ p {
     background-color: rgb(45, 48, 52);
 }
 .galleryRoot {
+    background-color: rgb(45, 48, 52);
+}
+.musicRoot{
     background-color: rgb(45, 48, 52);
 }
 .headDiv {
@@ -38,6 +41,22 @@ p {
     padding-top: 1%;
     padding-bottom: 1%
 }
+.galleryDiv {
+    margin-bottom: 1%;
+    background-color: rgb(35, 38, 42);
+    color: rgb(155, 160, 168);
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%
+}
+.musicDiv {
+    margin-bottom: 1%;
+    background-color: rgb(35, 38, 42);
+    color: rgb(155, 160, 168);
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%
+}
 .leftDiv {
     float: left;
     background-color: rgb(35, 38, 42);
@@ -48,14 +67,6 @@ p {
     background-color: rgb(35, 38, 42);
     padding-left: 40px;
     padding-right: 40px;
-}
-.galleryDiv {
-    margin-bottom: 1%;
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%
 }
 .stubImg {
     width: 200px;

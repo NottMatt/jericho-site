@@ -4,15 +4,22 @@
             "name": "Artbook",
             "short": " | demonstrative portfolio",
             "description": "A collection of pieces I have done over the years, for personal, professional, or educational purposes.",
-            "tags": "2022-12-01",
+            "tags": "",
             "source": "artbook.html"
         },
         {
             "name": "Github",
             "short": " | development projects",
             "description": "Not many projects have been migrated here, more will come in the future.",
-            "tags": "2022-12-02",
+            "tags": "",
             "source": "https://github.com/NottMatt"
+        },
+        {
+            "name": "Music",
+            "short": " | experimental tracks",
+            "description": "Every once in a while, inspiration strikes. Here is some music memes.",
+            "tags": "",
+            "source": "music.html"
         }
     ]
 }

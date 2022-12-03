@@ -33,7 +33,7 @@ function templateSlate(slate, name, short, link, description, tags) {
 
 // parse out json
 var loadWallslates = fetch("../structures/wallslates.json");
-var wallslates = loadWallslates.json();
+var wallslates = JSON.parse(loadWallslates);
 
 var slates = wallslates.entries;
 

@@ -14,9 +14,6 @@ p {
     width: 80%;
     font-size: 16px;
 }
-.structure {
-    display: none;
-}
 .slateRoot {
     background-color: rgb(45, 48, 52);
 }
@@ -76,6 +73,14 @@ p {
 }
 .pinImg {
     width: 88px;
+}
+.cringeFrame {
+    height: 300px;
+    width: 600px;
+}
+.basedFrame {
+    height: 300px;
+    width: 600px;
 }
 .tags {
     color: rgb(75, 78, 82);

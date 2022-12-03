@@ -39,7 +39,7 @@ function gallerySlate(slate, name, images, description, tags) {
 }
 
 var loadGalleryslates = await fetch("../structures/artslates.json");
-var galleryslates = loadWallslates.json();
+var galleryslates = await loadWallslates.json();
 
 var slates = galleryslates.pieces;
 

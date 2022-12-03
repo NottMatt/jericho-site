@@ -38,7 +38,7 @@ function gallerySlate(slate, name, images, description, tags) {
     rhs.append(tag);
 }
 
-var loadGalleryslates = await fetch("../structures/wallslates.json");
+var loadGalleryslates = await fetch("../structures/artslates.json");
 var galleryslates = loadWallslates.json();
 
 var slates = galleryslates.pieces;

@@ -38,22 +38,26 @@ function gallerySlate(slate, name, images, description, tags) {
     rhs.append(tag);
 }
 
-var loadGalleryslates = fetch("../structures/artslates.json");
-var galleryslates = JSON.parse(loadWallslates);
-var slates = galleryslates.pieces;
-
-for (var i = 0; i < slates.length; i++) {
-    let sName = slates[i].name;
-    let sImages = slates[i].images;
-    let sDesc = slates[i].description;
-    let sTags = slates[i].tags;
-
-    var newSlate = document.createElement("div");
-    gallerySlate(newSlate,
-                    sName,
-                    sImages,
-                    sDesc,
-                    sTags);
+// parse out json
+fetch("../structures/artslates.json", { 
+    method: 'GET'
+})
+    .then(function(response) { return response.json(); })
+    .then(function(json) {
+        var slates = json.pieces;
+        for (var i = 0; i < slates.length; i++) {
+        let sName = slates[i].name;
+        let sImages = slates[i].images;
+        let sDesc = slates[i].description;
+        let sTags = slates[i].tags;
     
-    topLevel.appendChild(newSlate);
-}
+        var newSlate = document.createElement("div");
+        gallerySlate(newSlate,
+                        sName,
+                        sImages,
+                        sDesc,
+                        sTags);
+        
+        topLevel.appendChild(newSlate);
+        }
+});

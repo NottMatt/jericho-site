@@ -54,7 +54,7 @@ fetch("../structures/wallslates.json", {
                             sTags);
             
             topLevel.appendChild(newSlate);
-    }
+        }
 });
 
 

@@ -7,7 +7,7 @@ for (i = 0; i < coll.length; i++) {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.maxHeight){
-        content.style.maxHeight = null;
+        content.style.maxHeight = 0;
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
       }

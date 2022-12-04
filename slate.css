@@ -11,77 +11,95 @@ h2 {
     font-size: 30px;
 }
 p {
-    width: 80%;
+    width: 80em;
     font-size: 16px;
 }
 .slateRoot {
     background-color: rgb(45, 48, 52);
+
 }
 .galleryRoot {
     background-color: rgb(45, 48, 52);
+
 }
 .musicRoot{
     background-color: rgb(45, 48, 52);
+
 }
 .headDiv {
     background-color: rgb(45, 48, 52);
     color: rgb(155, 160, 168);
     text-align: left;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding-left: 2vw;
+    padding-top: 2vw;
 }
 .entryDiv {
-    margin-bottom: 1%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    margin-bottom: 1em;
     background-color: rgb(35, 38, 42);
     color: rgb(155, 160, 168);
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .galleryDiv {
-    margin-bottom: 1%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    margin-bottom: 1em;
     background-color: rgb(35, 38, 42);
     color: rgb(155, 160, 168);
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .musicDiv {
-    margin-bottom: 1%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    margin-bottom: 1em;
     background-color: rgb(35, 38, 42);
     color: rgb(155, 160, 168);
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .leftDiv {
-    float: left;
     background-color: rgb(35, 38, 42);
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .rightDiv {
     background-color: rgb(35, 38, 42);
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .stubImg {
-    width: 200px;
+    width: 10em;
 }
 .galleryImg {
-    width: 500px;
+    width: 30em;
 }
 .pinImg {
-    width: 88px;
+    width: 20%;
 }
 .cringeFrame {
-    height: 400px;
-    width: 600px;
+    width: 40vw;
+    height: 30vh;
 }
 .basedFrame {
-    height: 400px;
-    width: 600px;
+    width: 40vw;
+    height: 30vh;
 }
 .tags {
     color: rgb(75, 78, 82);
+}
+.profile {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    margin-bottom: 1em;
+    background-color: rgb(35, 38, 42);
+    color: rgb(155, 160, 168);
+    padding-top: 1em;
+    padding-bottom: 1em;
 }

@@ -1,0 +1,60 @@
+{
+    "entries": [
+        {
+            "name": "Audacity",
+            "short": " | multipurpose audio platform",
+            "description": "feature-rich software for editing and manipulating audio files and audio projects.",
+            "tags": "",
+            "source": "https://www.audacityteam.org"
+        },
+        {
+            "name": "Blender",
+            "short": " | 3D modeling software",
+            "description": "most powerful free modeling software, feature rich and industry-competitive.",
+            "tags": "",
+            "source": "https://www.blender.org"
+        },
+        {
+            "name": "Todoist",
+            "short": " | calendar and task scheduling",
+            "description": "clean and functional platform for managing a calendar, tasks, and events.",
+            "tags": "",
+            "source": "https://todoist.com"
+        },
+        {
+            "name": "Leetcode",
+            "short": " | learn programming",
+            "description": "grow your programming experience with many helpful challenges and exercises.",
+            "tags": "",
+            "source": "https://leetcode.com"
+        },
+        {
+            "name": "Paint.Net",
+            "short": " | image editor",
+            "description": "robust and open-source replacement for photoshop.",
+            "tags": "",
+            "source": "https://www.getpaint.net"
+        },
+        {
+            "name": "Pureref",
+            "short": " | concepting software",
+            "description": "great for laying out ideas, collecting concept pieces, and organizing references.",
+            "tags": "",
+            "source": "https://www.pureref.com"
+        },
+        {
+            "name": "Landchad",
+            "short": " | how-to resource for websites",
+            "description": "many useful instructions and walkthroughs for self-hosting and starting with creating websites.",
+            "tags": "",
+            "source": "https://landchad.net"
+        },
+        {
+            "name": "Hackaday",
+            "short": " | tech domain news",
+            "description": "daily selection of articles concerning technology and recent tech-related happenings.",
+            "tags": "",
+            "source": "https://hackaday.com"
+        }
+    ]
+}

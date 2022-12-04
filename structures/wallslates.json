@@ -8,18 +8,25 @@
             "source": "artbook.html"
         },
         {
-            "name": "Github",
-            "short": " | development projects",
-            "description": "Not many projects have been migrated here, more will come in the future.",
-            "tags": "",
-            "source": "https://github.com/NottMatt"
-        },
-        {
             "name": "Music",
             "short": " | experimental tracks",
             "description": "Every once in a while, inspiration strikes. Here are some music memes.",
             "tags": "",
             "source": "music.html"
+        },
+        {
+            "name": "Recommendations",
+            "short": " | curated collection",
+            "description": "Tools, sites, and services I think are worth a glance.",
+            "tags": "",
+            "source": "recommend.html"
+        },
+        {
+            "name": "Github",
+            "short": " | development projects",
+            "description": "Not many projects have been migrated here, more will come in the future.",
+            "tags": "",
+            "source": "https://github.com/NottMatt"
         }
     ]
 }

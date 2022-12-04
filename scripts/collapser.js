@@ -6,11 +6,10 @@ for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
-      content.style.maxHeight = content.scrollHeight + "px";
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
+      if (content.style.maxHeight == null){
         content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = null;
       }
     });
   }

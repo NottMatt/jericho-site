@@ -145,5 +145,6 @@ p {
 .collapse {
     display: flex;
     overflow: hidden;
+    max-height: 0;
     transition: max-height 0.2s ease-out;
 }

@@ -127,3 +127,24 @@ p {
 .title {
     display: flex;
 }
+.collapser {
+    background-color: rgb(35, 38, 42);
+    border-color: rgb(25, 28, 32);
+    border-width: 8px;
+    cursor: pointer;
+    border-left-style: solid;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    width: 100%;
+    height: 20px;
+}
+.active, .collapser:hover {
+    background-color: rgb(25, 28, 32);
+}
+.collapse {
+    display: flex;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}

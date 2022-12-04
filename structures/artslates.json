@@ -96,8 +96,8 @@
             "description": "A friend commissioned a render of a massive space object in the form of a cat demolishing the earth.",
             "tags": "Blender, 3D render, humor",
             "images": [
-                {"source": "pieces/coverart.png"},
-                {"source": "pieces/Manifest.png"}
+                {"source": "pieces/spacecat.png"},
+                {"source": "pieces/spacecatmoon.png"}
             ]
         },
         {

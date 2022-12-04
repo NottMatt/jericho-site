@@ -27,6 +27,13 @@
             "description": "Not many projects have been migrated here, more will come in the future.",
             "tags": "",
             "source": "https://github.com/NottMatt"
+        },
+        {
+            "name": "About",
+            "short": " | motive and design principle",
+            "description": "",
+            "tags": "",
+            "source": "about.html"
         }
     ]
 }

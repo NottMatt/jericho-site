@@ -5,7 +5,6 @@ const projectLevel = document.querySelector(".projectRoot");
 
 // create new Slate
 function gallerySlate(slate, name, images, link, description, tags) {
-    slate.classList.add("galleryDiv");
 
     let lhs = document.createElement("div");
     let rhs = document.createElement("div");

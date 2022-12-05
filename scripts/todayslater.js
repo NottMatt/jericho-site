@@ -1,7 +1,7 @@
 // Generates Slates to put on the Today
 
-const based = "https://en.wikipedia.org/wiki/Polish_resistance_movement_in_World_War_II";
-const cringe = "https://en.wikipedia.org/wiki/Power_Chess";
+const based = "https://en.wikipedia.org/wiki/Suicide_door";
+const cringe = "https://en.wikipedia.org/wiki/Marriage_(Wales)_Act_2010";
 
 const bF = document.querySelector(".basedFrame");
 const cF = document.querySelector(".cringeFrame");

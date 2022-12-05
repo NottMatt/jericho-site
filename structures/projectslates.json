@@ -1,0 +1,22 @@
+{
+    "pieces": [
+        {
+            "name": "Pearl Stratocaster Modeling",
+            "description": "",
+            "tags": "Blender, 3D render, realism",
+            "link": "projects/stratocaster.html",
+            "images": [
+                {"source": "resources/guitar.png"}
+            ]
+        },
+        {
+            "name": "iPhone X Modeling",
+            "description": "",
+            "tags": "Blender, 3D render, realism",
+            "link": "projects/phone.html",
+            "images": [
+                {"source": "resources/phone.png"}
+            ]
+        }
+    ]
+}

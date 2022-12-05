@@ -23,6 +23,10 @@ a {
     background-color: rgb(45, 48, 52);
 
 }
+.projectRoot {
+    background-color: rgb(45, 48, 52);
+
+}
 .galleryRoot {
     background-color: rgb(45, 48, 52);
 
@@ -166,6 +170,7 @@ a {
     background-color: rgb(35, 38, 42);
     color: rgb(155, 160, 168);
     margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 .collapser:after {
     content: '\02795';

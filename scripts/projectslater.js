@@ -1,7 +1,7 @@
 // Generates Slates to put on the Artbook Page
 
 // Slate root
-const topLevel = document.querySelector(".projectRoot");
+const projectLevel = document.querySelector(".projectRoot");
 
 // create new Slate
 function gallerySlate(slate, name, images, link, description, tags) {
@@ -64,6 +64,6 @@ fetch("../structures/projectslates.json", {
                         sDesc,
                         sTags);
         
-        topLevel.appendChild(newSlate);
+                        projectLevel.appendChild(newSlate);
         }
 });

@@ -19,9 +19,10 @@ function gallerySlate(slate, name, link, image_src, description, tags) {
     lhs.append(image);
 
 
-    let header = document.createElement("a");    
-    header.textContent = name;
-    header.setAttribute("src", link);
+    let header = document.createElement("h2");
+    let headerLink = document.createElement("a");    
+    headerLink.textContent = name;
+    headerLink.setAttribute("src", link);
 
     let desc = document.createElement("p");
     desc.textContent = description;
@@ -33,6 +34,7 @@ function gallerySlate(slate, name, link, image_src, description, tags) {
     slate.append(lhs);
     slate.append(rhs);
     rhs.append(header);
+    header.appendChild(headerLink);
     rhs.append(desc);
     rhs.append(tag);
     

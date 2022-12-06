@@ -13,7 +13,7 @@ function gallerySlate(slate, name, link, image_src, description, tags) {
     lhs.classList.add("leftDiv");
 
     let image = document.createElement("img");
-    image.setAttribute("src", "image_src");
+    image.setAttribute("src", image_src);
     image.classList.add("galleryImg");
 
     lhs.append(image);

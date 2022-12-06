@@ -12,7 +12,7 @@
             "description": "",
             "tags": "Blender, 3D render, realism",
             "link": "projects/phone.html",
-            "images": "resources/phone.png"
+            "image": "resources/phone.png"
         }
     ]
 }

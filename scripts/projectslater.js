@@ -4,27 +4,24 @@
 const projectLevel = document.querySelector(".projectRoot");
 
 // create new Slate
-function gallerySlate(slate, name, images, link, description, tags) {
+function gallerySlate(slate, name, link, image_src, description, tags) {
+    slate.classList.add("projectDiv");
 
     let lhs = document.createElement("div");
     let rhs = document.createElement("div");
     rhs.classList.add("rightDiv");
     lhs.classList.add("leftDiv");
 
-    for (var i = 0; i < images.length; i++) {
-        let imgdiv = document.createElement("div");
-        let image = document.createElement("img");
-        image.classList.add("galleryImg");
-        image.setAttribute("src", images[i].source);
-        image.setAttribute("alt", "image missing");
-        imgdiv.append(image);
-        lhs.append(imgdiv);
-    }
+    let image = document.createElement("img");
+    image.setAttribute("src", "image_src");
+    image.classList.add("galleryImg");
 
-    let header = document.createElement("h2"); 
-    let headerLink = document.createElement("a");  
-    headerLink.setAttribute("href", link); 
-    headerLink.textContent = name;
+    lhs.append(image);
+
+
+    let header = document.createElement("a");    
+    header.textContent = name;
+    header.setAttribute("src", link);
 
     let desc = document.createElement("p");
     desc.textContent = description;
@@ -36,9 +33,9 @@ function gallerySlate(slate, name, images, link, description, tags) {
     slate.append(lhs);
     slate.append(rhs);
     rhs.append(header);
-    header.append(headerLink);
     rhs.append(desc);
     rhs.append(tag);
+    
 }
 
 // parse out json
@@ -51,7 +48,7 @@ fetch("../structures/projectslates.json", {
         for (var i = 0; i < slates.length; i++) {
         let sName = slates[i].name;
         let sLink = slates[i].link;
-        let sImages = slates[i].images;
+        let sImages = slates[i].image;
         let sDesc = slates[i].description;
         let sTags = slates[i].tags;
     
@@ -59,7 +56,7 @@ fetch("../structures/projectslates.json", {
         gallerySlate(newSlate,
                         sName,
                         sLink,
-                        sImages,
+                        sImage,
                         sDesc,
                         sTags);
         

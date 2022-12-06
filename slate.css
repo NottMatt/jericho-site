@@ -84,6 +84,15 @@ a {
     padding-top: 1em;
     padding-bottom: 1em;
 }
+.projectDiv {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    background-color: rgb(35, 38, 42);
+    color: rgb(155, 160, 168);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 .leftDiv {
     background-color: rgb(35, 38, 42);
     padding-left: 1em;

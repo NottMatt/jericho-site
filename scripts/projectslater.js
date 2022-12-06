@@ -48,7 +48,7 @@ fetch("../structures/projectslates.json", {
         for (var i = 0; i < slates.length; i++) {
         let sName = slates[i].name;
         let sLink = slates[i].link;
-        let sImages = slates[i].image;
+        let sImage = slates[i].image;
         let sDesc = slates[i].description;
         let sTags = slates[i].tags;
     

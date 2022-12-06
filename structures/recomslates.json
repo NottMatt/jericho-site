@@ -1,6 +1,13 @@
 {
     "entries": [
         {
+            "name": "ChatGPT",
+            "short": " | language model chat bot",
+            "description": "GPT-3 AI chatbot designed for dialogue and interpreting verbal requests.",
+            "tags": "",
+            "source": "https://chat.openai.com"
+        },
+        {
             "name": "Audacity",
             "short": " | multipurpose audio platform",
             "description": "feature-rich software for editing and manipulating audio files and audio projects.",

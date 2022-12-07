@@ -231,3 +231,57 @@ a {
     display: block;
     margin-top: 0.5em;
   }
+  .formPopup {
+    display: none;
+    position: fixed;
+    top: 3.5em;
+    right: 8px;
+    z-index: 9;
+    background-color: rgb(25, 28, 32);
+  }
+  .formContainer {
+    max-width: 500px;
+    padding: 10px;
+    background-color: rgb(25, 28, 32);
+  }
+  .formContainer input[type=comment] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(45, 48, 52);
+    color: (207, 214, 225);
+  }
+  .formContainer input[type=text]:focus {
+    background: rgb(55, 58, 62);
+    color: (207, 214, 225);
+    outline: none;
+  }
+  .formContainer .btn {
+    background-color: rgb(45, 48, 52);
+    color: rgb(207, 214, 225);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: rgb(118, 31, 31);
+  }
+  .formContainer .btn:hover {
+    opacity: 1;
+  }
+  .subm {
+    background-color: rgb(45, 48, 52);
+  }
+  .cancel{
+    background-color: rgb(118, 31, 31);
+  }
+  .cmtBox {
+    color: rgb(207, 214, 225);
+  }
+  .cmtBox ::placeholder {
+    color: rgb(187, 194, 205);
+  }

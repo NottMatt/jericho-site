@@ -6,8 +6,18 @@
     </head>
     <body>
         <div class="buttonStack">
-            <button class="topButton comment">leave a comment</button>
-            <!-- <button class="topButton">leave a comment</button> -->
+            <button class="topButton commenter" onclick="openForm()">leave a comment</button>
+            <!-- comment form -->
+            <div class="formPopup" id="commentForm">
+                <form action="/action_page.php" class="formContainer">
+                <h1 style="font-size: 25px;">leave a comment</h1>
+                <label for="cmt"></label>
+                <input type="comment" class="cmtBox" placeholder="Enter Comment" name="cmt" required>
+            
+                <button type="submit" class="btn subm">send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+                </form>
+            </div>
         </div>
         
         <div class="headDiv">
@@ -64,6 +74,8 @@
         <!--Other Entries-->
 
         <div class="slateRoot"></div>
+
+        
 
     </body>
     <script src="scripts/wallslater.js"></script>

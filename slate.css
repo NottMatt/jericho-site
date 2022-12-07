@@ -286,3 +286,8 @@ a {
   .cmtBox ::placeholder {
     color: rgb(187, 194, 205);
   }
+  .calendar {
+    width: 100vw;
+    height: 500px;
+    border: none;
+  }

@@ -18,6 +18,7 @@ p {
 }
 a {
     color:rgb(237, 132, 156);
+    text-decoration: none;
 }
 .slateRoot {
     background-color: rgb(45, 48, 52);

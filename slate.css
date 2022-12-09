@@ -291,3 +291,6 @@ a {
     height: 500px;
     border: none;
   }
+  .game {
+    padding-top: 1em;
+  }

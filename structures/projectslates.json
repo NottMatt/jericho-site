@@ -13,6 +13,13 @@
             "tags": "Blender, 3D render, realism",
             "link": "projects/phone.html",
             "image": "resources/phone.png"
+        },
+        {
+            "name": "Tool Tracker Database",
+            "description": "",
+            "tags": "chatGPT, database",
+            "link": "projects/tooldb.html",
+            "image": "resources/tooldb.png"
         }
     ]
 }

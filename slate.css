@@ -294,3 +294,10 @@ a {
   .game {
     padding-top: 1em;
   }
+  .song {
+    float: bottom;
+    display: flex;
+    width: 25vw;
+    margin-right: 1em;
+    margin-left: 1em;
+  }

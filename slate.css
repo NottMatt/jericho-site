@@ -1,112 +1,163 @@
+:root {
+  /* DARK MODE */
+  --baseColor: rgb(45, 48, 52);
+  --slateColor: rgb(35, 38, 42);
+  --darkAccentColor: rgb(25, 28, 32);
+  --darkerAccentColor: rgb(20, 23, 27);
+  --lightAccentColor: rgb(237, 132, 156);
+
+  --lightText: rgb(207, 214, 225);
+  --midText: rgb(155, 160, 168);
+  --darkText: rgb(75, 78, 82);
+  --colorText: rgb(237, 132, 156);
+
+  /* LIGHT MODE */
+  /* --baseColor: rgb(201, 201, 221);
+  --slateColor: rgb(221, 221, 241);
+  --darkAccentColor: rgb(141, 141, 161);
+  --darkerAccentColor: rgb(161, 161, 181);
+  --lightAccentColor: rgb(187, 82, 106);
+
+  --lightText: rgb(20, 23, 27);
+  --midText: rgb(25, 28, 32);
+  --darkText: rgb(35, 38, 42);
+  --colorText: rgb(187, 82, 106); */
+  
+
+  --left-margin: 5vw;
+  --right-margin: 5vw;
+
+  --navbar-width: 30px;
+  --left-sidebar-width: calc(var(--left-margin) - 10px);
+  --right-sidebar-width: calc(var(--right-margin) - 10px);
+}
+
+/* DEFAULT CLASSES */
 body {
-    background-color: rgb(45, 48, 52);
+    background-color: var(--baseColor);
     font-family: "Lucida Console", "Courier New", monospace;
     padding: 0px;
     margin: 0px;
 }
 h1 {
-    color: rgb(207, 214, 225);
+    color: var(--lightText);
     font-size: 40px;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 h2 {
-    color: rgb(207, 214, 225);
+    color: var(--lightText);
     font-size: 30px;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 p {
     width: 100%;
     font-size: 16px;
+    color: var(--midText);
 }
 a {
-    color:rgb(237, 132, 156);
+    color:var(--colorText);
     text-decoration: none;
 }
+
+/* ROOT CLASSES */
 .slateRoot {
-    background-color: rgb(45, 48, 52);
+    background-color: var(--baseColor);
 
 }
 .projectRoot {
-    background-color: rgb(45, 48, 52);
+    background-color: var(--baseColor);
 
 }
 .galleryRoot {
-    background-color: rgb(45, 48, 52);
+  background-color: var(--baseColor);
 
 }
 .musicRoot{
-    background-color: rgb(45, 48, 52);
+  background-color: var(--baseColor);
 
 }
+
+/* DIV CLASSES */
 .headDiv {
-    background-color: rgb(45, 48, 52);
-    color: rgb(155, 160, 168);
+    background-color: var(--baseColor);
+    color: var(--lightText);
     text-align: left;
     padding-left: 2vw;
     padding-top: 2em;
+    padding-left: 10px;
+    margin-left: calc(var(--left-margin));
+    margin-right: var(--right-margin);
 }
 .entryDiv {
     border-left-style: solid;
     border-right-style: solid;
     border-width: 8px;
-    border-color: rgb(25, 28, 32);
+    border-color: var(--darkAccentColor);
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     margin-bottom: 1em;
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
+    background-color: var(--slateColor);
+    color: var(--lightText);
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
 }
 .galleryDiv {
     border-left-style: solid;
     border-right-style: solid;
     border-width: 8px;
-    border-color: rgb(25, 28, 32);
+    border-color: var(--darkAccentColor);
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     margin-bottom: 1em;
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
+    background-color: var(--slateColor);
+    color: var(--lightText);
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
 }
 .musicDiv {
     border-left-style: solid;
     border-right-style: solid;
     border-width: 8px;
-    border-color: rgb(25, 28, 32);
+    border-color: var(--darkAccentColor);
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     margin-bottom: 1em;
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
+    background-color: var(--slateColor);
+    color: var(--lightText);
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
 }
 .projectDiv {
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
+    background-color: var(--slateColor);
+    color: var(--lightText);
     padding-top: 1em;
     padding-bottom: 1em;
     
 }
 .leftDiv {
-    background-color: rgb(35, 38, 42);
+    background-color: var(--slateColor);
     padding-left: 1em;
     padding-right: 1em;
 }
 .rightDiv {
-    background-color: rgb(35, 38, 42);
+    background-color: var(--slateColor);
     padding-left: 1em;
     padding-right: 1em;
 }
+
+/* IMG */
 .stubImg {
     width: 10em;
 }
@@ -119,58 +170,68 @@ a {
     align-self: center;
     padding-left: 2em;
 }
+
+/* FEATURED */
 .cringeFrame {
     width: 40vw;
     height: 30vh;
     border-style: solid;
     border-width: 4px;
-    border-color: rgb(25, 28, 32);
+    border-color: var(--darkAccentColor);
 }
 .basedFrame {
     width: 40vw;
     height: 30vh;
     border-style: solid;
     border-width: 4px;
-    border-color: rgb(25, 28, 32);
+    border-color: var(--darkAccentColor);
 }
 .tags {
-    color: rgb(75, 78, 82);
+    color: var(--darkText);
 }
+
+/* PROFILE */
 .profile {
     border-left-style: solid;
     border-right-style: solid;
     border-width: 8px;
-    border-color: rgb(25, 28, 32);
+    border-color: var(--darkAccentColor);
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     margin-bottom: 1em;
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
+    background-color: var(--slateColor);
+    color: var(--lightText);
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
 }
 .title {
     display: flex;
 
 }
+
+/* COLLAPSER */
 .collapser {
-    background-color: rgb(35, 38, 42);
-    border-color: rgb(25, 28, 32);
-    border-width: 8px;
-    cursor: pointer;
-    border-left-style: solid;
-    border-bottom: none;
-    border-top: none;
-    border-right-style: solid;
-    width: 100%;
-    height: 20px;
-    color: rgb(45, 48, 52);
-    text-align: left;
-    transition: 0.2s;
+  background-color: var(--slateColor);
+  border-color: var(--darkAccentColor);
+  border-width: 8px;
+  cursor: pointer;
+  border-left-style: solid;
+  border-bottom: none;
+  border-top: none;
+  border-right-style: solid;
+  width: calc(100% - (var(--left-margin) + var(--right-margin)));
+  height: 20px;
+  color: var(--baseColor);
+  text-align: left;
+  transition: 0.2s;
+  margin-left: var(--left-margin);
+  margin-right: var(--right-margin);
 }
 .active, .collapser:hover {
-    background-color: rgb(25, 28, 32);
+    background-color: var(--darkAccentColor);
 }
 .collapse {
     display: flex;
@@ -181,26 +242,31 @@ a {
     border-left-style: solid;
     border-right-style: solid;
     border-width: 8px;
-    border-color: rgb(25, 28, 32);
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
+    border-color: var(--darkAccentColor);
+    background-color: var(--slateColor);
+    color: var(--lightText);
     margin-bottom: 1em;
     padding-bottom: 1em;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
 }
 .collapser:after {
     content: '\02795';
     font-size: 13px;
-    color: rgb(45, 48, 52);
+    color: var(--baseColor);
     float: left;
   }
   
   .active:after {
     content: "\2796"; 
   }
+
+  /* TITLING */
   .quote {
     font-size: 20px;
     font-style: italic;
     padding-left: 1em;
+    color: var(--midText);
   }
   .sectionTitle {
     height: 70px;
@@ -209,106 +275,29 @@ a {
     border-left-style: solid;
     border-right-style: solid;
     border-width: 8px;
-    border-color: rgb(25, 28, 32);
-    display: flex;
-    background-color: rgb(35, 38, 42);
-    color: rgb(155, 160, 168);
+    border-color: var(--darkAccentColor);
+    background-color: var(--slateColor);
+    color: var(--lightText);
+    display:flex;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
   }
-  .topButton {
-    font-family: "Lucida Console", "Courier New", monospace;
-    padding: 0.5em;
-    background-color:rgb(45, 48, 52);
-    color: rgb(207, 214, 225);
-    border: none;
-    border-right-style: solid;
-    font-size: 20px;
-    border-color: rgb(25, 28, 32);
-    border-width: 8px;
-    display: block;
-    text-align: right;
-    width: 12em;
-  }
-  .active, .topButton:hover {
-    background-color: rgb(35, 38, 42);
-}
-  .buttonStack {
-    float: right;
-    display: block;
-    margin-top: 3em;
-  }
-  .formPopup {
-    display: none;
-    position: fixed;
-    top: 3.5em;
-    right: 8px;
-    z-index: 9;
-    background-color: rgb(25, 28, 32);
-  }
-  .formContainer {
-    max-width: 500px;
-    padding: 10px;
-    background-color: rgb(25, 28, 32);
-  }
-  .formContainer input[type=comment] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: rgb(45, 48, 52);
-    color: (207, 214, 225);
-  }
-  .formContainer input[type=text]:focus {
-    background: rgb(55, 58, 62);
-    color: (207, 214, 225);
-    outline: none;
-  }
-  .formContainer .btn {
-    background-color: rgb(45, 48, 52);
-    color: rgb(207, 214, 225);
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
-  .formContainer .cancel {
-    background-color: rgb(118, 31, 31);
-  }
-  .formContainer .btn:hover {
-    opacity: 1;
-  }
-  .subm {
-    background-color: rgb(45, 48, 52);
-  }
-  .cancel{
-    background-color: rgb(118, 31, 31);
-  }
-  .cmtBox {
-    color: rgb(207, 214, 225);
-  }
-  .cmtBox ::placeholder {
-    color: rgb(187, 194, 205);
-  }
+
+  /* DASHBOARD */
   .calendar {
     width: 100vw;
     height: 500px;
     border: none;
   }
-  .game {
-    padding-top: 1em;
-  }
-  .song {
-    display: flex;
-    width: 23vw;
-  }
+
+  /* NAVBAR */
   .navbar {
-    height: 30px;
+    height: var(--navbar-width);
     width: 100vw;
     padding: 0px;
     margin: 0px;
     top: 0px;
-    background-color:rgb(25, 28, 32);
+    background-color:var(--darkAccentColor);
     position: fixed;
     align-content: center;
     justify-content: center;
@@ -318,7 +307,6 @@ a {
   .navbar-nav {
     list-style: none;
     height: 100%;
-    max-width: 1000px;
     padding: 0px;
     margin: 0px;
     display: flex;
@@ -342,7 +330,19 @@ a {
     transition: 0.2s;
   }
   .nav-item:hover {
-    background-color: rgb(20, 23, 27);
+    background-color: var(--darkerAccentColor);
+  }
+  .nav-this {
+    padding-top: 0.3em;
+    width: 60%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--darkerAccentColor);
   }
   .nav-link {
     display: flex;
@@ -359,5 +359,35 @@ a {
   }
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);
-    color: rgb(237, 132, 156);
+    color: var(--lightAccentColor);
+  }
+
+  /* SIDEBAR */
+  .left-sidebar {
+    height: 100vh;
+    width: var(--left-sidebar-width);
+    padding: 0px;
+    margin: 0px;
+    top: var(--navbar-width);
+    left: 0px;
+    background-color:var(--darkAccentColor);
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .right-sidebar {
+    height: 100vh;
+    width: var(--right-sidebar-width);
+    padding: 0px;
+    margin: 0px;
+    top: var(--navbar-width);
+    right: 0px;
+    background-color:var(--darkAccentColor);
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
   }

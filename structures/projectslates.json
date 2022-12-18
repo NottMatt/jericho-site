@@ -4,22 +4,29 @@
             "name": "Pearl Stratocaster Modeling",
             "description": "",
             "tags": "Blender, 3D render, realism",
-            "link": "projects/stratocaster.html",
+            "link": "",
             "image": "resources/guitar.png"
         },
         {
             "name": "iPhone X Modeling",
             "description": "",
             "tags": "Blender, 3D render, realism",
-            "link": "projects/phone.html",
+            "link": "",
             "image": "resources/phone.png"
         },
         {
             "name": "Tool Tracker Database",
             "description": "",
             "tags": "chatGPT, database",
-            "link": "projects/tooldb.html",
+            "link": "",
             "image": "resources/tooldb.png"
+        },
+        {
+            "name": "Wave Function Collapse",
+            "description": "",
+            "tags": "algorithm, simulation",
+            "link": "",
+            "image": "resources/wave-collapse.png"
         }
     ]
 }

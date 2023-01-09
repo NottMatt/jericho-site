@@ -1,0 +1,187 @@
+:root {
+    /* DARK MODE */
+    --baseColor: rgb(45, 48, 52);
+    --slateColor: rgb(35, 38, 42);
+    --darkAccentColor: rgb(25, 28, 32);
+    --darkerAccentColor: rgb(20, 23, 27);
+    --lightAccentColor: rgb(237, 132, 156);
+  
+    --lightText: rgb(207, 214, 225);
+    --midText: rgb(155, 160, 168);
+    --darkText: rgb(75, 78, 82);
+    --colorText: rgb(237, 132, 156);
+
+  
+    --left-margin: 5vw;
+    --right-margin: 5vw;
+  
+    --navbar-width: 30px;
+    --left-sidebar-width: calc(var(--left-margin) - 10px);
+    --right-sidebar-width: calc(var(--right-margin) - 10px);
+
+    background-color: var(--baseColor);
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: var(--lightText);
+  }
+
+
+  /* tile root */
+  .tileRoot {
+    width: 100vw;
+    height: calc(100vh - var(--navbar-width));
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    top: var(--navbar-width);
+    left: 0px;
+  }
+
+  .tile {
+    width: 150px;
+    min-height: 60px;
+    border-bottom-style: solid;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-width: 20px;
+    background-color: var(--slateColor);
+    border-color: var(--darkAccentColor);
+    padding: 10px;
+    position: fixed;
+    transition: 0.2s;
+    z-index: 10;
+  }
+  .tile:hover {
+    background-color: var(--darkAccentColor);
+  }
+
+  /* menu */
+  .menu {
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    right: 0px;
+    background-color: var(--darkAccentColor);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .content-input {
+    width: 90%;
+    height: 150px;
+    margin: 10px;
+    margin-top: var(--navbar-width);
+    background-color: var(--baseColor);
+    color: var(--lightText);
+  }
+  .menu-button {
+    border-style: none;
+    color: var(--darkText);
+    background-color: var(--darkerAccentColor);
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-color: var(--darkerAccentColor);
+    border-style: solid;
+    border-width: 2px;
+  }
+  .menu-button:hover {
+    background-color: var(--slateColor);
+  }
+
+  /* lines */
+  .line {
+    height: 0px;
+    border-top-style: solid;
+    border-color: var(--darkerAccentColor);
+    border-width: 4px;
+    position: fixed;
+    width: 200px;
+    z-index: -1;
+  }
+
+
+
+
+
+
+
+
+  /* NAVBAR */
+  .navbar {
+    height: var(--navbar-width);
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    background-color:var(--darkAccentColor);
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    z-index: 10;
+  }
+  .navbar-nav {
+    list-style: none;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .nav-item {
+    padding-top: 0.3em;
+    width: 60%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.2s;
+  }
+  .nav-item:hover {
+    background-color: var(--darkerAccentColor);
+  }
+  .nav-this {
+    padding-top: 0.3em;
+    width: 60%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--darkerAccentColor);
+  }
+  .nav-link {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    padding-top: 5px;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    filter: grayscale(100%) opacity(0.8);
+    transition: 0.2s;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    color: var(--lightAccentColor);
+  }
